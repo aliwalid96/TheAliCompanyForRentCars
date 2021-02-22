@@ -1,0 +1,45 @@
+body{
+    background-color: aqua;
+}
+
+#land{
+    height: 300px;
+    width: 200px ;
+    align-items: center;
+}
+header{
+    border: 3px solid black;
+}
+h1{
+    text-align: center;
+}
+li{
+    margin-right: 5px;
+   display: inline;
+
+}
+img{
+    padding: 10px;
+    align-items: center;
+    height: 200px;
+    width: 400px ;
+    align-items: center;
+
+}
+div{
+    border: 3px solid black; 
+}
+h3{
+    text-align: center;
+}
+h2{
+    text-align: center;
+    color: darkmagenta;
+}
+ p{
+text-align: center;
+color: crimson;
+}
+.email{
+font-style: italic;
+}
