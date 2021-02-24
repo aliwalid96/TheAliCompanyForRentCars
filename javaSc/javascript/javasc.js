@@ -14,25 +14,34 @@ var mark4=prompt("enter mark 4");
 var mark5=prompt("enter mark 5");
 
 
+var avg=calculateTheTotal(parseInt(mark1),parseInt(mark2),parseInt(mark3),parseInt(mark4),parseInt(mark5))/5;
+chechTheAvareg(avg);
 
 
-var avg=(parseInt(mark5)+parseInt(mark2)+parseInt(mark3)+parseInt(mark4)+parseInt(mark5))/5;
-console.log("the avg ="+avg);
 
-if(avg>=50 && avg <=60){
-    console.log("you passed ");
+
+
+function calculateTheTotal(firstMark1,secondMark,thirdMark,fourthMark,fifthMark){
+    var total=(firstMark1+secondMark+thirdMark+fourthMark+fifthMark);
+    return total;   
 }
-else if(avg>=61 && avg <=70){
-    console.log("you passed with good grade  ");
-}
-else if(avg>=71 && avg <=80){
-    console.log("you passed with very good grade  ");
-}
-else if(avg>=81 && avg <99){
-    console.log("you passed with excelent grade  ");
-}else{
-    console.log("sorry you didnt pass ");
-}
+
+function chechTheAvareg(avg){
+    if(avg>=50 && avg <=60){
+        console.log("you passed ");
+    }
+    else if(avg>=61 && avg <=70){
+        console.log("you passed with good grade  ");
+    }
+    else if(avg>=71 && avg <=80){
+        console.log("you passed with very good grade  ");
+    }
+    else if(avg>=81 && avg <99){
+        console.log("you passed with excelent grade  ");
+    }else{
+        console.log("sorry you didnt pass ");
+    }
+    }
 var element=document.getElementById("avareg")
 console.log('---------->',element)
 element.innerText="the avarege of the mark is " + avg;
@@ -52,5 +61,11 @@ if(frequantcounter >0 && frequantcounter<6){
    
     }
 }else{
-    var frequantcounter =prompt("enter the vlue of the repetation of the image ");
+    var frequantcounter =prompt("enter the vlue of the repetation of the image from 1 to 5 ");
+    for(var i=1;i<=frequantcounter;i++){
+   
+        document.write('<img src="http://jpvitale.com/jpvitalewordpress/wp-content/uploads/2014/08/Great_Work.jpg" />');
+      
+       
+        }
 }
