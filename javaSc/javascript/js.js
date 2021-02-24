@@ -1,9 +1,4 @@
-var message =prompt("welcome to our page please enter your age"); 
-while (message<=18){
-     message =prompt("welcome to our page please enter your age"); 
-}
-
-
+confirm("welcome to our page");
 
 
 var studentName=prompt("please enter the student name");
@@ -12,13 +7,20 @@ var mark2=prompt("enter mark 2");
 var mark3=prompt("enter mark 3");
 var mark4=prompt("enter mark 4");
 var mark5=prompt("enter mark 5");
+var age =prompt("enter student age" );
+
+var avg=calculateTheTotal(parseInt(mark1),parseInt(mark2),parseInt(mark3),parseInt(mark4),parseInt(mark5))/5;
+chechTheAvareg(avg);
+
+
+function calculateTheTotal(firstMark1,secondMark,thirdMark,fourthMark,fifthMark){
+    var total=(firstMark1+secondMark+thirdMark+fourthMark+fifthMark);
+    return total;   
+}
 
 
 
-
-var avg=(parseInt(mark5)+parseInt(mark2)+parseInt(mark3)+parseInt(mark4)+parseInt(mark5))/5;
-console.log("the avg ="+avg);
-
+function chechTheAvareg(avg){
 if(avg>=50 && avg <=60){
     console.log("you passed ");
 }
@@ -33,6 +35,7 @@ else if(avg>=81 && avg <99){
 }else{
     console.log("sorry you didnt pass ");
 }
+}
 var element=document.getElementById("avareg")
 console.log('---------->',element)
 element.innerText="the avarege of the mark is " + avg;
@@ -40,17 +43,6 @@ element.innerText="the avarege of the mark is " + avg;
 var element2=document.getElementById("sName")
 element2.innerText="the name is " + studentName;
 
+var element3=document.getElementById("age")
+element3.innerText="the age" + age;
 
-
-var frequantcounter =prompt("enter how many do you want to repet the img  ");
-
-if(frequantcounter >0 && frequantcounter<6){
-    for(var i=1;i<=frequantcounter;i++){
-   
-    document.write('<img src="http://jpvitale.com/jpvitalewordpress/wp-content/uploads/2014/08/Great_Work.jpg" />');
-  
-   
-    }
-}else{
-    var frequantcounter =prompt("enter the vlue of the repetation of the image ");
-}
